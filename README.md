@@ -3,9 +3,15 @@
 ## Background
 
 UBI - Universal Base Image
-* works on OpenShift and k8s
 
-igc - IBM Garage commands
+    * works on OpenShift and k8s
+    * vehicle for building and delivering certified containers and operators
+    * comes in different flavors - nodejs, python, java, etc
+    * licensed for redistribution
+
+UI - Universal Image (our current IBM ISV definition)
+
+    * certifiable container image, built on a UBI 
 
 Work items:
 
@@ -28,14 +34,12 @@ Work items:
     * meta data probably from starter kit
     * `igc enable` will populate repo with stuff toolkit will need 
 
-
 Cloud-Native Toolkit Guide : https://cloudnativetoolkit.dev/
 
 Tutorial on how to how to build a UBI from a starter kit:
 https://github.ibm.com/TT-ISV-org/images/blob/main/toolkit/build-starter-kit.md
 
 What is the toolkit?
-
 
 ## Install Developers Toolkit on local machine
 
