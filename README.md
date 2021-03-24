@@ -47,11 +47,9 @@ What is the toolkit?
 
     * Generate new Personal Access Token on my public github account:
         * Name is "CI Pipleline"
-        * 2732972ade19308aa7c2fad3add6b0b27bbcbbb8
     * Generate new IBM Cloud API Key
         * IBM Cloud account under Amol's account
         * Name is "native-toolkit"
-        * -mTUPCTfzH9OneNGPc-ZGVXpRTyecBiZT3WtTKGPDDyQ
 2. Developer Tools Setup: https://cloudnativetoolkit.dev/getting-started/dev-env-setup/
 
     * Take local laptop path
