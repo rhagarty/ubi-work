@@ -68,9 +68,9 @@ What is the toolkit?
 
         * When I start a new `term` window, I am using my `~/.bash_profile`, so I need to source in my `.bashrc` file which is where all the new toolkit settings are:
 
-            * ```bash
-                source .bashrc
-                ```
+            ```bash
+            source .bashrc
+            ```
 
     * configure git:
 
@@ -206,6 +206,51 @@ Next steps:
 
     ![repo-webhook](images/repo-webhook.png)
 
+    * The webhook will be activated every time main is updated.
+
 * View pipeline in OpenShift Console - `Developer` -> `Pipelines` (under `tools` project):
 
     ![pipeline](images/pipeline.png)
+
+* View image in IBM Cloud console:
+
+    ![image-view](images/image-view.png)
+
+    * Image is stored in the IBM Cloud container registry
+
+* Note that image is:
+
+    * prefixed with resource group name `isv-scenarios`
+    * it is auto tagged with release name `0.0.1`
+    * github repo should also be tagged
+
+* Artifactory - use cloud native toolkit button to navigate
+
+    ![artifactory-menu](images/artifactory-menu.png)
+
+    * Access to helm chart:
+
+        ![artifactory-yaml](images/artifactory-yaml.png)
+
+        NOTE the tag - sync'd with image and github repo
+
+## Run app
+
+From CLI:
+
+```bash
+oc endpoints
+Getting the endpoints in the dev-rh namespace
+? Endpoints in the 'dev-rh' namespace. Select an endpoint to launch the default browser or 'Exit'.
+ https://native-app-1-dev-rh.isv-scenarios-ocp-f2c6cdc6801be85fd188b09d006f13e3-0000.us-south.containers.appdomain.cloud
+```
+
+From console, click upper-right icon on app:
+
+![launch-app](images/launch-app.png)
+
+Brings up swagger panel:
+
+![swagger-screen](images/swagger-screen.png)
+
+
